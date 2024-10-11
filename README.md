@@ -9,9 +9,11 @@
 
 ### Introduction
 - Introduction to Churn Analysis
+
 In the competitive world of business, keeping customers is essential for long-term success. Churn analysis helps businesses understand why customers leave and how to prevent it. By examining customer data, companies can find patterns and reasons behind these departures. Using advanced data analytics and machine learning, businesses can predict which customers are likely to leave and identify the main reasons behind their decision. This insight allows companies to take action to increase customer satisfaction and build loyalty.
 
 - Who is the Target Audience
+
 While this project focuses on churn analysis for a telecom company, the techniques and insights can be used in many other industries. Whether it's retail, finance, healthcare, or any business that aims to keep its customers, churn analysis can be valuable. We will cover the methods, tools, and best practices to reduce churn and boost customer loyalty, turning data into practical steps for lasting success.
 
 ### Project Overview
@@ -28,7 +30,7 @@ Visualize and Analyze Customer Data at different levels:
 - Study Churner Profiles and identify areas for implementing marketing campaigns.
 - **Develop a Method to Predict Future Churners**
 
-# Key Metrics to Track
+### Key Metrics to Track
 - Total Customers
 - Total Churn and Churn Rate
 - New Joiners
@@ -52,7 +54,7 @@ The first step in churn analysis is loading the data from our source file. We wi
 - Set the customerId as the primary key and allow null values for other columns to avoid errors during data load.
 - Change the data type of any field labeled as BIT to Varchar(50) since the import wizard handles Varchar(50) better.
 
-- # 3. Data Exploration and Cleaning
+## Data Exploration and Cleaning
 - Step 1: Check Distinct Values
 To understand the distribution of values in key columns, run the following queries:
 - Gender Distribution:
@@ -201,8 +203,11 @@ create view vw_joindata as
 
 ### STEP 3: Power BI Measure
 Total Customers = Count(prod_churn[customer_id])
+
 New Joiners = CALCULATE(COUNT(prod_churn[customer_iD]), prod_churn[customer_status] = "Joined")
+
 Total Churn = SUM(prod_churn[Churn Status])
+
 Churn Rate = [Total Churn] / [Total Customers]
 
 ### STEP 4: Power BI Visualization
