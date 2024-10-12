@@ -422,29 +422,31 @@ original_data.to_csv(r"C:\Users\Neeraj Thakur\Desktop\Projects\Python\Data & Res
 Import CSV Data or Load Predicted data in SQL server & connect to server
 
 - Create Measures
+  
 Count Predicted Churner = COUNT(prediction_data[customer_id]) + 0
+
 Title Predicted Churners = "COUNT OF PREDICTED CHURNERS : " & COUNT(prediction_data[customer_id])
 
 - Churn Prediction Page (Using New Predicted Data)
-1.  Right Side Grid
-a.       Customer ID
-b.       Monthly Charge
-c.       Total Revenue
-d.       Total Refunds
-e.       Number of Referrals
+1. Right Side Grid
+- Customer ID
+- Monthly Charge
+- Total Revenue
+- Total Refunds
+- Number of Referrals
 
-2.  Demographic
-a.       Gender – Churn Count
-b.       Age Group – Churn Count
-c.       Marital Status – Churn Count
+2. Demographic
+- Gender – Churn Count
+- Age Group – Churn Count
+- Marital Status – Churn Count
 
-3.  Account Info
-a.       Payment Method – Churn Count
-b.       Contract – Churn Count
-c.       Tenure Group - Churn Count
+3. Account Info
+- Payment Method – Churn Count
+- Contract – Churn Count
+- Tenure Group - Churn Count
 
 4.  Geographic
-a.       State – Churn Count
+- State – Churn Count
 
  
 
