@@ -210,6 +210,9 @@ Total Churn = SUM(prod_churn[Churn Status])
 
 Churn Rate = [Total Churn] / [Total Customers]
 
+![churn_analysis_summary](https://github.com/user-attachments/assets/8fd77b6a-937e-4921-b802-35454da141ea)
+
+
 ### STEP 4: Power BI Visualization
 - Summary Page
 1.  Top Card
@@ -448,5 +451,6 @@ Title Predicted Churners = "COUNT OF PREDICTED CHURNERS : " & COUNT(prediction_d
 4.  Geographic
 - State – Churn Count
 
- 
+ ![churn_analysis_prediction](https://github.com/user-attachments/assets/d98c8e3a-1a63-47d4-8758-2317a45005e2)
+
 
